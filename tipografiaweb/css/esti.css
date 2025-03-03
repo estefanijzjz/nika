@@ -1,0 +1,336 @@
+
+
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.header, .nav, .title, .banner, .article, .footer, .fila, .imgtxt, .end, .newsletter, .about, .recommendations, .quotes {
+    width: 90%; /* Mayor flexibilidad en el ancho */
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+
+/* Ajustes específicos */
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img1 {
+    width: 650px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.txt1 {
+    font-size:  20px;
+    line-height: 1.4;
+    max-width: 600px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.txt2 {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.4;
+   
+}
+
+.img2 {
+    width: 100px;
+    height: auto;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column; /* Cambié a columna para ajustar la imagen y el texto */
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+}
+
+.img3 {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: auto; /* La altura se ajusta automáticamente según el ancho */
+    max-height: 500px; /* Limita la altura máxima de la imagen (ajústalo según necesites) */
+    object-fit: cover; /* Hace que la imagen se recorte y se ajuste adecuadamente */
+}
+
+.txt3 {
+    flex: 1;
+    font-size: 20px;
+    margin-left: 18px;
+    line-height: 1.4;
+}
+
+.article {
+    padding: 15px;
+}
+
+.txt4 {
+    font-size:20px;
+    line-height: 1.4;
+   
+}
+
+.fila {
+    padding: 15px;
+}
+
+.txt5 { 
+    font-size: 20px;
+    line-height: 1.4;
+    
+}
+
+.imghhh {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+}
+
+.footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.galery {
+    display: flex;
+    justify-content: flex-start; /* Asegura que los cuadros se alineen desde la izquierda */
+    gap: 0; /* Ajuste para quitar cualquier espacio entre los cuadros */
+    flex-wrap: wrap; /* Para que los elementos se acomoden en varias filas */
+    margin: 0 auto;
+    margin-top: 15px; /* Añadí un pequeño margen arriba de la galería para darle espacio con la imagen de arriba */
+}
+
+.box {
+    width: 13%; /* Ajusta el ancho de cada cuadro para que haya 7 en total */
+    padding-bottom: 13%; /* Esto asegura que cada cuadro sea cuadrado */
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 0; /* Eliminé el margen inferior */
+    margin-right: 1%; /* Añadí un pequeño margen a la derecha para que no se pegue a la siguiente caja */
+}
+
+.box-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Esto hace que las imágenes sean clickeables */
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer; /* Cambia el cursor para indicar que la imagen es clickeable */
+}
+
+/* Ajuste del contenedor de la galería */
+.galery {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+/* Añadir un estilo para que las imágenes se comporten como botones */
+.box-img img:active {
+    opacity: 0.7; /* Agrega un efecto cuando la imagen es clickeada */
+    transform: scale(0.98); /* Hace un pequeño efecto de "clic" */
+}
+
+/* Contenedor de la imagen con el texto */
+.sky-container {
+    position: relative;
+    width: 100%;  /* Hace que el contenedor ocupe el 100% del ancho */
+    max-width: 600px;  /* Puedes ajustar este tamaño según lo necesites */
+    margin: 0 auto;
+}
+
+/* Estilos para la imagen */
+.sky-container img {
+    width: 100%;  /* La imagen ocupa todo el ancho */
+    height: auto;  /* La altura se ajusta automáticamente */
+    display: block;
+}
+
+/* Estilos para el texto */
+.sky-text {
+    position: absolute;
+    top: 50%;  /* Posiciona el texto en el centro vertical */
+    left: 50%;  /* Posiciona el texto en el centro horizontal */
+    transform: translate(-50%, -50%);  /* Ajuste fino para centrar el texto */
+    color: rgb(1, 4, 21);  /* Cambia el color del texto a blanco para que resalte */
+    font-size: 20px;  /* Tamaño del texto */
+    text-align: center;  /* Centra el texto */
+    width: 90%; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gifsill-text {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.txt6 {
+    font-size: 20px;
+    line-height: 1.4;
+    
+}
+
+.texto-cielo {
+    font-size: 20px; /* Tamaño del texto */
+    line-height: 1.4; /* Espaciado entre líneas */
+    margin-top: 20px; /* Espaciado en la parte superior */
+    text-align: justify; /* Centrado */
+    font-family: 'Times New Roman', Times, serif; /* Tipografía */
+    width: 90%; /* Hace que el ancho sea del 90%, igual que otros elementos */
+    max-width: 800px; /* Límite máximo de ancho igual que otros textos */
+    padding-left: 0; /* Asegura que no haya margen extra a la izquierda */
+    padding-right: 0; /* Asegura que no haya margen extra a la derecha */
+}
+
+
+.gifsill-banner{
+    
+    margin-top: 35px;
+
+}
+
+.gifboo-banner {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.gifboo-banner img {
+    width: 100%; /* Ajusta el tamaño si es necesario */
+    max-width: 500px; /* Tamaño máximo */
+    height: auto;
+    
+}
+
+.texto1 {
+    font-size: 20px; /* Tamaño del texto */
+    line-height: 1.4; /* Espaciado entre líneas */
+    margin-top: 20px; /* Espaciado en la parte superior */
+    text-align: justify; /* Centrado */
+    font-family: 'Times New Roman', Times, serif; /* Tipografía */
+    width: 90%; /* Hace que el ancho sea del 90%, igual que otros elementos */
+    max-width: 800px; /* Límite máximo de ancho igual que otros textos */
+    padding-left: 0; /* Asegura que no haya margen extra a la izquierda */
+    padding-right: 0; /* Asegura que no haya margen extra a la derecha */
+}
+
+
+/* Estilo de la galería en una fila */
+.gallery-images {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que las imágenes se rompan a la siguiente fila */
+    gap: 5px; /* Reduce el espacio entre las imágenes */
+    overflow-x: auto; /* Permite desplazarse horizontalmente si es necesario */
+    padding: 10px 0; /* Agrega algo de espaciado vertical */
+    justify-content: flex-start; /* Alinea las imágenes al principio */
+}
+
+/* Estilo de las imágenes */
+.gallery-images img {
+    width: auto;
+    height: 150px; /* Ajusta la altura de las imágenes */
+    margin: 0 5px; /* Espaciado entre las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se recorten correctamente */
+    margin-top: 40px;
+}
+
+
+
+/* Si hay más imágenes de las que caben en la pantalla, las podemos deslizar horizontalmente */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .gallery-images {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-images {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+.textobye{
+    width: 100%;
+
+}
+
+
+.goodbye-section {
+    text-align: center; /* Centra el texto */
+    margin-top: 50px;   /* Espacio superior para separar del contenido anterior */
+    margin-bottom: 100px;
+}
+
+.goodbye-text {
+    font-size: 6rem;    /* Tamaño grande para el texto */
+    font-weight: bold;  /* Aumenta el grosor del texto */
+    color: #000000;     /* Color rosado brillante (puedes cambiarlo) */
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+}
+
+
+.section11 {
+    text-align: center; /* Centra el texto */
+    margin-top: 50px;   /* Espacio superior para separar del contenido anterior */
+    margin-bottom: 100px;
+}
+
+.text11 {
+    font-size: 20px;    /* Tamaño grande para el texto */
+    font-weight: bold;  /* Aumenta el grosor del texto */
+    color: #000000;     /* Color rosado brillante (puedes cambiarlo) */
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    animation: fadeIn 2s ease-in-out; /* Animación de entrada */
+}
+
+
+
